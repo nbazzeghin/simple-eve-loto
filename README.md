@@ -1,19 +1,17 @@
-// *****************************************************************************
-// *  Simple EVE Lotto 1.2                                                     *
-// *                                                                           *
-// *  Copyright (c) 2010 Nigel Bazzeghin                                       *
-// *                                                                           *
-// *  This program is free software; you can redistribute it and/or            *
-// *  modify it under the terms of the GNU General Public License              *
-// *  as published by the Free Software Foundation; either version 3           *
-// *  of the License, or (at your option) any later version.                   *
-// *                                                                           *
-// *  This program is distributed in the hope that it will be useful,          *
-// *  but WITHOUT ANY WARRANTY; without even the implied warranty of           *
-// *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            *
-// *  GNU General Public License for more details.                             *
-// *                                                                           *                                               *
-// *****************************************************************************
+Simple EVE Lotto 1.2
+====================
+>Copyright (c) 2010 Nigel Bazzeghin
+
+>This program is free software; you can redistribute it and/or  
+modify it under the terms of the GNU General Public License  
+as published by the Free Software Foundation; either version 3  
+of the License, or (at your option) any later version.  
+
+>This program is distributed in the hope that it will be useful,  
+but WITHOUT ANY WARRANTY; without even the implied warranty of  
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the  
+GNU General Public License for more details.
+
 
 The Simple EVE Lotto web app is setup to allow you to create a lottery that other pilots can purchase
 tickets from. After you have created a lotto and set it state to open, just pass along the lotto code
@@ -38,23 +36,18 @@ for that. The system is also capable of tracking and managing multiple ongoing l
 
 INSTALLATION INSTRUCTIONS:
 
-1) Copy entire contents of zip file to folder on your host. IE "public_html/lotto/"
+1. Copy entire contents of zip file to folder on your host. IE "public_html/lotto/"
 
-2) Edit config files to match your database and API settings. Make sure the path in configuration.php 
-   is the full path to your lotto install.
-	a) ale/eveonline.ini
-	b) ale/evecentral.ini  
-	c) configuration.php
+2. Edit config files (ale/eveonline.ini, ale/evecentral.ini, configuration.php) to match your database and API settings.    Make sure the path in configuration.php is the full path to your lotto install.
 	
-3) Open your browser and point it to the setup directory where you extracted the lotto system. 
-	IE "http://yoursite.com/lotto/setup"
+3. Open your browser and point it to the setup directory where you extracted the lotto system. IE "http://yoursite.com/lotto/setup"
 	
-4) Use default options on setup and continue
+4. Use default options on setup and continue
 
-5) Setup cron job to execute cron.php on some type of interval. The lotto system makes use of API caching
+5. Setup cron job to execute cron.php on some type of interval. The lotto system makes use of API caching
    so as not to upset the CCP API server, so it doenst matter how often you call cron.php, you are only
    going to be getting new data every hour.
    
-6) Browse to http://yoursite.com/lotto/lotto-admin.php and create your new lotto	 
+6. Browse to http://yoursite.com/lotto/lotto-admin.php and create your new lotto	 
 
-7) Search for your new lotto on the front end. http://yoursite.com/lotto/index.php
+7. Search for your new lotto on the front end. http://yoursite.com/lotto/index.php
